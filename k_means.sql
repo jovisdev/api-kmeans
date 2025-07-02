@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 11, 2025 at 09:10 AM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- Waktu pembuatan: 02 Jul 2025 pada 06.47
+-- Versi server: 10.4.32-MariaDB
+-- Versi PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `data_mapel`
+-- Struktur dari tabel `data_mapel`
 --
 
 CREATE TABLE `data_mapel` (
@@ -33,7 +33,7 @@ CREATE TABLE `data_mapel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
--- Dumping data for table `data_mapel`
+-- Dumping data untuk tabel `data_mapel`
 --
 
 INSERT INTO `data_mapel` (`id`, `mapel`) VALUES
@@ -48,7 +48,7 @@ INSERT INTO `data_mapel` (`id`, `mapel`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `data_nilai`
+-- Struktur dari tabel `data_nilai`
 --
 
 CREATE TABLE `data_nilai` (
@@ -59,7 +59,7 @@ CREATE TABLE `data_nilai` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `data_nilai`
+-- Dumping data untuk tabel `data_nilai`
 --
 
 INSERT INTO `data_nilai` (`id`, `siswa_id`, `mapel_id`, `nilai`) VALUES
@@ -326,7 +326,7 @@ INSERT INTO `data_nilai` (`id`, `siswa_id`, `mapel_id`, `nilai`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `data_siswa`
+-- Struktur dari tabel `data_siswa`
 --
 
 CREATE TABLE `data_siswa` (
@@ -338,11 +338,11 @@ CREATE TABLE `data_siswa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
--- Dumping data for table `data_siswa`
+-- Dumping data untuk tabel `data_siswa`
 --
 
 INSERT INTO `data_siswa` (`id`, `nis`, `nama`, `kelamin`, `kelas`) VALUES
-(42, '3000', 'ABBIYU BUMI GIBRAN', 'Laki Laki', '3A'),
+(42, '3000', 'ABBIYU BUMI GIBRAN', 'Laki Laki', '3B'),
 (43, '3001', 'ABBIYU LANGIT GIBRAN', 'Laki Laki', '3A'),
 (44, '3002', 'AISYA FAIHA', 'Perempuan', '3A'),
 (45, '3003', 'ALYANA MAULIDA', 'Perempuan', '3A'),
@@ -383,7 +383,7 @@ INSERT INTO `data_siswa` (`id`, `nis`, `nama`, `kelamin`, `kelas`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Struktur dari tabel `users`
 --
 
 CREATE TABLE `users` (
@@ -396,27 +396,25 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
--- Dumping data for table `users`
+-- Dumping data untuk tabel `users`
 --
 
 INSERT INTO `users` (`id`, `nama`, `jabatan`, `username`, `password`, `refresh_token`) VALUES
-(2, 'Jovis Jocunda', 'Super Admin', 'jovis', '$2a$10$z8hSvAnfBacNBZyJEc/eHuH.z7qI1VXsgck87RYcwcrwc57a7hj4m', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsIm5hbWUiOiJKb3ZpcyBKb2N1bmRhIiwiamFiYXRhbiI6IlN1cGVyIEFkbWluIiwiaWF0IjoxNzQyODgxNDI3LCJleHAiOjE3NDI5Njc4Mjd9.wtORKpmzR7O1CHhePioza4jzFU3dpMa04y5W6Ys2t0U'),
-(7, 'Adinda Az-zahra', 'Super Admin', 'adin', '$2a$10$MwuVkIgG/5qsi/ewQlC1C.p8k8e/5FCQYz2Wm.gtEWhFD0x.2JPqy', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcsIm5hbWUiOiJBZGluZGEgQXotemFocmEiLCJqYWJhdGFuIjoiU3VwZXIgQWRtaW4iLCJpYXQiOjE3NDk2MTk2MjMsImV4cCI6MTc0OTcwNjAyM30.ffgJPLHRf98dVJQ_A6odxDMWyaAR2PUabwBx0xZIMRs'),
-(9, 'Agus Setiawan', 'Staff TU', 'agus', '$2a$10$8r0.MnE27Mwkn015zC7HqOiZB7AdFxFt2RbeVgyTP0CrBUFWKZt4e', NULL),
-(10, 'Reza Arap', 'Guru', 'reza', '$2a$10$khVUC05fN0GwLaiIluPz2.IzCBFa89ShR739ZFuYWr2dpN6YHZdzu', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwLCJuYW1lIjoiUmV6YSBBcmFwIiwiamFiYXRhbiI6Ikd1cnUiLCJpYXQiOjE3NDkwMTQzMzUsImV4cCI6MTc0OTEwMDczNX0.7YRUJ2WHhTC3cbWf6wn83X1ZZmoR5bcBcROSp1cFTAs');
+(2, 'Jovis Jocunda', 'Super Admin', 'jovis', '$2a$10$z8hSvAnfBacNBZyJEc/eHuH.z7qI1VXsgck87RYcwcrwc57a7hj4m', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsIm5hbWUiOiJKb3ZpcyBKb2N1bmRhIiwiamFiYXRhbiI6IlN1cGVyIEFkbWluIiwiaWF0IjoxNzQ3NjYyMjc4LCJleHAiOjE3NDc3NDg2Nzh9.aVbzIEQqsEFyjkycez_hkhnnQCQhLfsMZvt0KP7a2VQ'),
+(7, 'Adinda Az-zahra', 'Super Admin', 'adin', '$2a$10$MwuVkIgG/5qsi/ewQlC1C.p8k8e/5FCQYz2Wm.gtEWhFD0x.2JPqy', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcsIm5hbWUiOiJBZGluZGEgQXotemFocmEiLCJqYWJhdGFuIjoiU3VwZXIgQWRtaW4iLCJpYXQiOjE3NTE0MzEyODksImV4cCI6MTc1MTUxNzY4OX0.HnqX3IA4rP7uhWuwyDU9mLrbPkva30Gv1XY93cVhCmA');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `data_mapel`
+-- Indeks untuk tabel `data_mapel`
 --
 ALTER TABLE `data_mapel`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `data_nilai`
+-- Indeks untuk tabel `data_nilai`
 --
 ALTER TABLE `data_nilai`
   ADD PRIMARY KEY (`id`),
@@ -424,51 +422,51 @@ ALTER TABLE `data_nilai`
   ADD KEY `dataset_id` (`siswa_id`) USING BTREE;
 
 --
--- Indexes for table `data_siswa`
+-- Indeks untuk tabel `data_siswa`
 --
 ALTER TABLE `data_siswa`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `users`
+-- Indeks untuk tabel `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `data_mapel`
+-- AUTO_INCREMENT untuk tabel `data_mapel`
 --
 ALTER TABLE `data_mapel`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=64;
 
 --
--- AUTO_INCREMENT for table `data_nilai`
+-- AUTO_INCREMENT untuk tabel `data_nilai`
 --
 ALTER TABLE `data_nilai`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=283;
 
 --
--- AUTO_INCREMENT for table `data_siswa`
+-- AUTO_INCREMENT untuk tabel `data_siswa`
 --
 ALTER TABLE `data_siswa`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- Constraints for dumped tables
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
 
 --
--- Constraints for table `data_nilai`
+-- Ketidakleluasaan untuk tabel `data_nilai`
 --
 ALTER TABLE `data_nilai`
   ADD CONSTRAINT `data_nilai_ibfk_2` FOREIGN KEY (`mapel_id`) REFERENCES `data_mapel` (`id`),
